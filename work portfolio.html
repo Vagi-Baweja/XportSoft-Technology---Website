@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top IT Solutions Company</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin-left: 77px;
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #591a33, #2548b8, #2548b8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo img {
+            width: 142px;
+            margin-left: 20px;
+        }
+
+        .info p {
+            color: white;
+            margin: 0;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        p1 {
+            color: yellow;
+            margin: 0;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        .buttons button {
+            background: linear-gradient(to right, #ffd700, #e56b00);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 9px 19px;
+            cursor: pointer;
+            font-size: 24px;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 24px;
+            margin-top: 0px;
+            margin-left: 16px;
+        }
+
+
+        .buttons button:hover {
+            background: linear-gradient(to right, blue, purple);
+            color: white;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .left-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .left-content h2 {
+            background: linear-gradient(90deg, #591a33, #2548b8, #2548b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 4rem;
+            margin-left: 84px;
+            margin-top: -55px;
+            background: linear-gradient(90deg, #591a33, #2548b8, #2548b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 6px;
+
+
+        }
+
+        p {
+            margin-left: 90px;
+            font-size: 30px;
+            color: #132547;
+        }
+
+        .left-content p {
+            margin-top: 10px;
+        }
+
+        .button-row {
+            margin-top: 20px;
+        }
+
+        .button-row button {
+            font-size: 15px;
+            font-family: monospace;
+            margin-left: 71px;
+            font-size: 20px;
+            padding: 8px;
+            border-radius: 20px;
+            background: white;
+            font-weight: bolder;
+        }
+
+        .button-row button:hover {
+            background: linear-gradient(to right, purple, blue);
+            color: white;
+        }
+
+
+
+
+
+        .container {
+            display: flex;
+        }
+
+        .image-container {
+            width: 201px;
+            height: 427px;
+            overflow: hidden;
+            position: relative;
+            margin-right: 20px;
+            transform: rotate(0deg);
+            margin-top: -2px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            animation: moveImages 5s linear infinite;
+        }
+
+        .image-container img:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .image-container img:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        .image-container img:nth-child(4) {
+            animation-delay: 3s;
+        }
+
+        .image-container img:nth-child(5) {
+            animation-delay: 4s;
+        }
+
+        .image-container img:nth-child(6) {
+            animation-delay: 5s;
+        }
+
+        .image-container img:nth-child(7) {
+            animation-delay: 6s;
+        }
+
+        .image-container img:nth-child(8) {
+            animation-delay: 7s;
+        }
+
+        .image-container img:nth-child(9) {
+            animation-delay: 8s;
+        }
+
+        .image-container img:nth-child(10) {
+            animation-delay: 9s;
+        }
+
+        @keyframes moveImages {
+            0% {
+                bottom: 0;
+            }
+
+            100% {
+                bottom: 100%;
+            }
+        }
+
+        .image-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .image-section .image-container1 {
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .image-container1:hover img {
+            transform: scale(1.1);
+        }
+
+        .text{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0;
+            width: 400px;
+            background-color: rgba(94, 25, 233, 0.7);
+            color: white;
+            overflow: hidden;
+            text-align: center;
+            transition: height 0.8s ease-in-out;
+        }
+
+        p4{
+            margin: 0;
+            padding: 20px;
+            animation: slideIn 3s ease-in-out;
+        }
+     
+        .image-container1:hover .text{
+            display: block;
+            height: 100%;
+        }
+        button.button {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0;
+            width: 400px;
+            background-color: rgba(94, 25, 233, 0.7);
+            color: white;
+            overflow: hidden;
+            text-align: center;
+            transition: height 0.8s ease-in-out;
+
+
+}
+    
+     
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logoxportsoft.png" alt="Company Logo">
+        </div>
+        <div class="info">
+            <p>Award Winning Company | 1500+ Projects Completed | 69% Returning Customers</p>
+        </div>
+        <div class="buttons">
+            <a href="index.html">
+                <button>Visit Website</button>
+            </a>
+            <button>Get In Touch</button>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="left-content">
+            <h2>Spark Your Creativity</h2>
+            <h3>With Our #Team</h3>
+            <p>Creating an excellent impression for your brand</p>
+            <div class="button-row">
+                <button>Web Designing</button>
+                <button>Graphic Designing</button>
+                <button>Mobile Apps</button>
+            </div>
+            <div class="button-row">
+                <button>Digital Marketing</button>
+                <button>Software Development</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="work1.jpg" alt="Image 1">
+                <img src="work2.jpg" alt="Image 2">
+                <img src="work3.jpg" alt="Image 3">
+                <img src="work1.jpg" alt="Image 1">
+                <img src="work2.jpg" alt="Image 2">
+                <img src="work3.jpg" alt="Image 3">
+            </div>
+            <div class="image-container">
+                <img src="work4.jpg" alt="Image 11">
+                <img src="work5.jpg" alt="Image 12">
+                <img src="work6.jpg" alt="Image 13">
+                <img src="work4.jpg" alt="Image 14">
+                <img src="work5.jpg" alt="Image 15">
+                <img src="work6.jpg" alt="Image 16">
+            </div>
+            <div class="image-container">
+                <img src="work7.png" alt="Image 21">
+                <img src="work8.jpg" alt="Image 22">
+                <img src="work9.jpg" alt="Image 23">
+                <img src="work7.jpg" alt="Image 24">
+                <img src="work8.jpg" alt="Image 25">
+                <img src="work9.jpg" alt="Image 26">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="image-section">
+        <div class="image-container1">
+            <img src="work1.jpg" alt="Image 1">
+            <div class="overlay">
+                <div class="text">
+                    <p4></p4>
+                </div>
+                <button class="button">Explore More</button>
+            </div>
+        </div>
+        <div class="image-container1">
+            <img src="work2.jpg" alt="Image 2">
+            <div class="overlay">
+                <div class="text">
+                    <p4></p4>
+                </div>
+                <button class="button">Explore More</button>
+            </div>
+        </div>
+        <div class="image-container1">
+            <img src="work3.jpg" alt="Image 3">
+            <div class="overlay">
+                <div class="text">
+                    <p4></p4>
+                </div>
+                <button class="button">Explore More</button>
+            </div>
+        </div>
+        <div class="image-container1">
+            <img src="work4.jpg" alt="Image 4">
+            <div class="overlay">
+                <div class="text">
+                    <p4></p4>
+                </div>
+                <button class="button">Explore More</button>
+            </div>
+        </div>
+        <div class="image-container1">
+            <img src="work5.jpg" alt="Image 5">
+            <div class="overlay">
+                <div class="text">
+                    <p4></p4>
+                </div>
+                <button class="button">Explore More</button>
+            </div>
+        </div>
+        <div class="image-container1">
+            <img src="work6.jpg" alt="Image 6">
+            <div class="overlay">
+                <div class="text">
+                    <p4>fef</p4>
+                </div>
+                <button class="button">Explore More</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

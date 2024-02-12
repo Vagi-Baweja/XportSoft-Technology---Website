@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./logoxportsoft.png">
+    <title>Web Design & Development, SEO, PPC Services in India, UK </title>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 0px 0px 0px;
+            color: white;
+            background: linear-gradient(to right, purple, blue);
+        }
+
+        .white-section::before {
+            position: absolute;
+            content: '';
+            background: #fff;
+            top: -6px;
+            bottom: 0;
+            left: 701px;
+            right: 0;
+            width: 118px;
+            height: 107px;
+            transform: rotate(37deg);
+        }
+
+
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .white-section {
+            background-color: white;
+            padding: 33px 18px;
+
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: linear-gradient(to right, purple, blue);
+            margin: 0 15px;
+            position: relative;
+            font-size: 28px;
+        }
+
+        .highlight-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: #fff;
+            transition: width 0.3s ease-out;
+        }
+
+        .nav-link:hover {
+            color: black;
+        }
+
+        .nav-link:hover .highlight-line,
+        .nav-link.active .highlight-line {
+            width: 100%;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .logo {
+            width: 194px;
+            height: 69px;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .marquee {
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: scrolling 10s linear infinite;
+        }
+
+        .marquee-item {
+            flex: 0 0 16vw;
+            margin: 0 1vw;
+            flex: 0 0 20vw;
+            margin: 0 2vw;
+        }
+
+        .marquee-item img {
+            display: block;
+            width: 100%;
+            padding: 0 20px;
+            height: 138px;
+        }
+
+        @keyframes scrolling {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translatex(-144vw);
+            }
+        }
+
+        .services-section {
+            text-align: center;
+            padding: 80px;
+            background-color: white;
+        }
+
+        .services-section h2 {
+            font-size: 60px;
+            background: linear-gradient(91.63deg, #591a33 1.38%, #2548b8 98.62%);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-image img {
+            width: 565px;
+            margin-left: -93px;
+        }
+
+        .services-info {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .services-section h3 {
+            margin-bottom: 58px;
+            font-size: 26px;
+        }
+
+
+        .seo-button {
+            background: linear-gradient(90deg, #591a33, #2548b8, #2548b8);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 24px;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 6.5rem !important;
+        }
+
+
+        .seo-button:hover {
+            background: linear-gradient(90deg, purple, blue);
+            color: white;
+        }
+
+        .services-info p {
+            font-size: 35px;
+            line-height: 45px;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            margin-top: -68px;
+            color: #132547;
+
+        }
+
+        .services-info ul {
+            padding: 2px;
+            font-size: 23px;
+            margin-left: 43px;
+        }
+
+        .services-info li {
+            margin-bottom: 10px;
+        }
+
+
+
+        .light-grey-background {
+            background-color: #fafafa;
+        }
+
+        .app-section {
+            text-align: center;
+            padding: 80px;
+            background-color: white;
+        }
+
+        .app-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .app-image img {
+            width: 565px;
+            margin-right: -52px;
+        }
+
+        .app-info {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .app-section h3 {
+            margin-bottom: 58px;
+            font-size: 26px;
+        }
+
+
+        .app-button {
+            background: linear-gradient(90deg, #591a33, #2548b8, #2548b8);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 24px;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-bottom: 6.5rem !important;
+            margin-left: -90px;
+        }
+
+
+        .app-button:hover {
+            background: linear-gradient(90deg, purple, blue);
+            color: white;
+        }
+
+        .app-info p {
+            font-size: 38px;
+            line-height: 45px;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            margin-top: -68px;
+            color: #132547;
+            margin-left: -90px;
+
+        }
+
+        .app-info ul {
+            padding: 2px;
+            font-size: 23px;
+            margin-left: -66px;
+        }
+
+        .app-info li {
+            margin-bottom: 10px;
+        }
+
+
+
+        .light-grey-background {
+            background-color: #fafafa;
+        }
+
+        .section-advice {
+            background: linear-gradient(to right,
+                    rgba(37, 72, 184, 1) 0%,
+                    rgba(89, 26, 51, 1) 100%);
+            padding: 2rem 0;
+
+        }
+
+        .advice {
+            color: #ffffff;
+            font-size: 38px;
+            font-weight: 300;
+            margin-left: 90px;
+        }
+
+        .request-a-callback {
+            display: inline-block;
+            padding: 0.5rem 3rem;
+            border-radius: 100px;
+            font-size: 24px;
+            font-weight: 600;
+            background-color: #ffffff;
+            margin-left: 417px;
+        }
+
+        span {
+            display: inline-block;
+            background: linear-gradient(91.63deg, #591a33 1.38%, #2548b8 98.62%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-color: #ffffff;
+        }
+
+        .image-section {
+            background-color: white;
+            text-align: center;
+            padding: 80px;
+        }
+
+        .image-section h2 {
+            background: linear-gradient(91.63deg, #591a33 1.38%, #2548b8 98.62%);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 48px;
+            margin-top: -50px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 20px;
+            margin-top: 40px;
+        }
+
+        .image-container1 {
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            display: flex;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container1 img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+            margin: auto;
+        }
+
+        .image-container1:hover img {
+            transform: scale(1.1);
+        }
+
+        .idea-section {
+            background: linear-gradient(135deg, rgba(89, 26, 51, 1) 0%, rgba(37, 72, 184, 1) 100%);
+            text-align: center;
+            color: white;
+            padding: 70px;
+        }
+
+        .idea-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .idea-container h2 {
+
+            font-size: 60px;
+            color: #e5e5e5;
+        }
+
+        .idea-container p {
+            font-size: 21px;
+            color: #e5e5e5;
+            width: 137%;
+            margin-left: -93px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .contact-button {
+            background: linear-gradient(to right, #ffd700, #e56b00);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 25px;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 24px;
+            margin-top: 38px;
+        }
+
+        .contact-button:hover {
+            background: linear-gradient(to right, purple, blue);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="./logoxportsoft.png"></div>
+        <div class="nav-links">
+            <div class="white-section">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Services</a>
+                <a href="#" class="nav-link">Product</a>
+                <a href="#" class="nav-link">Work Portfolio</a>
+                <a href="#" class="nav-link">Contact us</a>
+                <div class="highlight-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <img src="./service banner1.png">
+    </div>
+    <div class="marquee">
+        <div class="marquee-content">
+            <div class="marquee-item">
+                <img src="./logo_1_raymond.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="logo_2_dotpe.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="logo_3_torque.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="logo_4_lupin.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="./dr.webp" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="dubai logo.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="ethnix_1.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="khanna gems.jpg" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="logo_2_dotpe.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="Lupin Diagnostics.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="MD_Beauty_Wellness_logo-02-01_2_600x200.avif" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="Mind.jpeg" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="park-avenue-vector-logo.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="torque-pharmaceuticals-pvt-ltd.jpg.webp" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="./aymond.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="colorplus-1274x849-1.jpg" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="converge.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="Dot pe.jpg" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="./dr.webp" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="dubai logo.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="ethnix_1.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="khanna gems.jpg" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="Lupin Diagnostics.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="MD_Beauty_Wellness_logo-02-01_2_600x200.avif" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="Mind.jpeg" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="park-avenue-vector-logo.png" alt="">
+            </div>
+            <div class="marquee-item">
+                <img src="torque-pharmaceuticals-pvt-ltd.jpg.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <div class="services-section">
+            <h2>Services We Offer</h2>
+            <h3>Bridging the gap between vision and reality with prominent IT solutions</h3>
+
+
+            <div class="services-container">
+                <div class="services-image">
+                    <img src="./SEO-friendly-Technologies-to-build-website.jpg" alt="Services Image">
+                </div>
+
+                <div class="services-info">
+
+                    <button class="seo-button">SEO-FRIENDLY WEBSITES</button>
+
+                    <p>Visually appealing, bespoke, cross-platform, and bug-free websites.</p>
+
+                    <ul>
+                        <li>Highly performing, responsive, and heavy-duty sites</li>
+                        <li>Scalable, cutting-edge, and hybrid solutions</li>
+                        <li>Innovative implementation and seamless optimization</li>
+                        <li>Easy to navigate for both you and your visitors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="app-section light-grey-background">
+
+            <div class="app-container ">
+                <div class="app-info">
+
+                    <button class="app-button">CUSTOMIZED ECOMMERCE SOLUTIONS
+                    </button>
+
+                    <p>Get expertly crafted, user-friendly, and highly converting shopping cart solutions!</p>
+
+                    <ul>
+                        <li>Following battle-ready tricks to get you on top</li>
+                        <li>Setting up your web store with utmost precision</li>
+                        <li>Expanding your reach, visibility, and sales</li>
+                        <li>Highly focused on our client's success
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="app-image">
+                    <img src="./ecommerce-custom-web-banner.webp" alt="Services Image">
+                </div>
+            </div>
+        </div>
+        <div class="services-section">
+
+            <div class="services-container">
+                <div class="services-image">
+                    <img src="./mobile_application_development_ad3f711b7d.jpg" alt="Services Image">
+                </div>
+
+                <div class="services-info">
+
+                    <button class="seo-button">MOBILE APP DEVELOPMENT
+                    </button>
+
+                    <p>User-centric, native, hybrid Apps - adding value to your brand.</p>
+
+                    <ul>
+                        <li>Intuitive, easy-to-use yet powerful
+                        </li>
+                        <li>Engaging, functional, and robust
+                        </li>
+                        <li>Engineered for excellence and efficiency
+                        </li>
+                        <li>Truly tailored to meet your business goals
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-advice">
+            <p class="advice">Contact Us for Your IT Needs Now<button class="request-a-callback"><span>Request a
+                        Callback</span></button>
+            </p>
+        </div>
+        <div class="app-section light-grey-background">
+
+            <div class="app-container ">
+                <div class="app-info">
+
+                    <button class="app-button">UI/UX DESIGN
+
+                    </button>
+
+                    <p>Innovative implementation to boost your brand's persona</p>
+
+                    <ul>
+                        <li>Pixel-perfect, carefully crafted, and attention-grabbing designs</li>
+                        <li>Fused with latest technology and usability</li>
+                        <li>Highly-intuitive and user-friendly interface</li>
+                        <li>Making you stand out in competitive market</li>
+                    </ul>
+                </div>
+
+                <div class="app-image">
+                    <img src="./uiuxdesign.jpg" alt="Services Image">
+                </div>
+            </div>
+        </div>
+        <div class="services-section">
+
+            <div class="services-container">
+                <div class="services-image">
+                    <img src="./digital.webp" alt="Services Image">
+                </div>
+
+                <div class="services-info">
+
+                    <button class="seo-button">DIGITAL MARKETING</button>
+
+                    <p>Offering marketing solutions that are game changers</p>
+
+                    <ul>
+                        <li>Raising brand awareness, traffic, and leads</li>
+                        <li>Result-driven strategies</li>
+                        <li>Increasing your customer base for the best ROI</li>
+                        <li>Maximizing your online presence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="app-section light-grey-background">
+
+            <div class="app-container ">
+                <div class="app-info">
+
+                    <button class="app-button">SOFTWARE DEVELOPMENT</button>
+
+                    <p>Custom-tailored software solutions from A-1 developers</p>
+
+                    <ul>
+                        <li>Utilizing industry-standard practices</li>
+                        <li>Following agile development process</li>
+                        <li>Following time-tested delivery methods with excellence</li>
+                        <li>Building next-gen tech solutions to empower businesses</li>
+                    </ul>
+                </div>
+
+                <div class="app-image">
+                    <img src="./software developemnt.webp" alt="Services Image">
+                </div>
+            </div>
+        </div>
+        <div class="section-advice">
+            <p class="advice">Contact Us for Your IT Needs Now<button class="request-a-callback"><span>Request a
+                        Callback</span></button>
+            </p>
+        </div>
+        <div class="services-section">
+
+            <div class="services-container">
+                <div class="services-image">
+                    <img src="content development.jpg" alt="Services Image">
+                </div>
+
+                <div class="services-info">
+
+                    <button class="seo-button">CONTENT DEVELOPMENT
+                    </button>
+
+                    <p>SEO-rich, unique, and engaging content that drives results</p>
+
+                    <ul>
+                        <li>Creating compelling content for visitors and search engines
+                        </li>
+                        <li>Nurturing leads and increasing sales
+                        </li>
+                        <li>Weaving words into sentences by delivering A-grade content
+                        </li>
+                        <li>Making you a part of the Digital Revolution
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-section light-grey-background">
+
+            <div class="app-container ">
+                <div class="app-info">
+
+                    <button class="app-button">SOCIAL MEDIA MARKETING
+                    </button>
+
+                    <p>Ticking your business targets with the perfect SMM strategies</p>
+
+                    <ul>
+                        <li>Developing cross-channel marketing campaigns
+                        </li>
+                        <li>Following approach that sticks and scales
+                        </li>
+                        <li>Bolstering user engagement with quality content
+                        </li>
+                        <li>Getting your brand noticed online
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="app-image">
+                    <img src="./social media.jpeg" alt="Services Image">
+                </div>
+            </div>
+        </div>
+        <div class="services-section">
+
+            <div class="services-container">
+                <div class="services-image">
+                    <img src="./graphic-design.webp" alt="Services Image">
+                </div>
+
+                <div class="services-info">
+
+                    <button class="seo-button">GRAPHIC DESIGNING
+                    </button>
+
+                    <p>Visualizing ideas and adding creativity to your brand's success!</p>
+
+                    <ul>
+                        <li>Creating coherent designs that truly connect with audiences
+                        </li>
+                        <li>Designing images with an eye for ingenuity
+                        </li>
+                        <li>Get designs leaving lasting impressions
+                        </li>
+                        <li>Establishing robust visual identity for your brand
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="app-section light-grey-background">
+
+            <div class="app-container ">
+                <div class="app-info">
+
+                    <button class="app-button">PRINT MEDIA DESIGNING
+
+                    </button>
+
+                    <p>Forging creativity and strategy into work to deliver staggering results</p>
+
+                    <ul>
+                        <li>Employing fresh ideas and insights
+                        </li>
+                        <li>Creating designs with never-seen-before initiative
+                        </li>
+                        <li>Improving your brand awareness
+                        </li>
+                        <li>Promising designs with impact and result
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="app-image">
+                    <img src="./print-media-career-options-2.jpg" alt="Services Image">
+                </div>
+            </div>
+        </div>
+        <div class="image-section">
+            <h2>Companies That Trusted Us With Their Projects</h2>
+
+            <div class="image-grid">
+                <div class="image-container1">
+                    <img src="aymond.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="converge.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="colorplus-1274x849-1.jpg" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="dr.webp" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="dubai logo.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="Dot pe.jpg" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="jio-dubai-properties_full_1695722872.jpg" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="Lupin Diagnostics.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="eseo.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="egan.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="esoft safe.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="ethnix_1.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="fijikava.webp" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="Revwerks+logo_Final.jpg" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="khanna gems.jpg" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="MD_Beauty_Wellness_logo-02-01_2_600x200.avif" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="Mind.jpeg" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="park-avenue-vector-logo.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="ankura.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="amt.jpg" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="triton.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="torque-pharmaceuticals-pvt-ltd.jpg.webp" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="Mind.jpeg" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="esoft safe.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="ethnix_1.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="logo_27_trosgnistan.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="mimdclick.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="micro smart.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="consuller.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="new auto.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="logo_33_ecomm-deddy.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="haifa.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="browco.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="dr dhir.png" alt="Company 1">
+                </div>
+                <div class="image-container1">
+                    <img src="drpritam.png" alt="Company 1">
+                </div>
+            </div>
+        </div>
+        <div class="idea-section">
+            <div class="idea-container">
+                <h2>Got an Idea?</h2>
+                <p>We have on board the most supportive team that's always on its toes to help you.</p>
+                <button class="contact-button">Contact Us</button>
+            </div>
+        </div>
+
+
+
+    </body>
+
+    </html>
